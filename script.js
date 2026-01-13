@@ -11,7 +11,7 @@ const adminBtn = document.getElementById('footerAdminLink');
 const uploadSection = document.getElementById('upload');
 const adminDashboard = document.getElementById('adminDashboard');
 const videoContainer = document.getElementById('videoContainer');
-const COUNTAPI_NS = 'movieflexz.razaz.org';
+const COUNTAPI_NS = 'movieflixzz.razaz.info';
 let viewsChartInstance = null;
 
 let observer;

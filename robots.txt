@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://movieflexz.razaz.org/sitemap.xml
-Sitemap: https://movieflexz.razaz.org/sitemap.txt
+Sitemap: https://movieflixzz.razaz.info/sitemap.xml
+Sitemap: https://movieflixzz.razaz.info/sitemap.txt
