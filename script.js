@@ -107,8 +107,14 @@ document.addEventListener('DOMContentLoaded', () => {
         displayMovies(filtered);
         const titleEl = document.querySelector('#movies .section-title');
         if (titleEl) titleEl.textContent = `${catParam.charAt(0).toUpperCase() + catParam.slice(1)} Movies`;
+        document.title = `MovieFlix — ${catParam.charAt(0).toUpperCase() + catParam.slice(1)} Movies`;
+        const can = document.querySelector('link[rel="canonical"]');
+        if (can) can.setAttribute('href', `${location.origin}${location.pathname}?category=${encodeURIComponent(catParam)}`);
     } else {
         displayMovies(movies);
+        document.title = 'MovieFlix - Watch Movies & TV Shows Online';
+        const can = document.querySelector('link[rel="canonical"]');
+        if (can) can.setAttribute('href', `${location.origin}${location.pathname}`);
     }
     updateVisitorStats();
     setupEventListeners();
